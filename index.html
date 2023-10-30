@@ -3,42 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="styles.css" rel="stylesheet" type="text/css"/>
-    <link href="utility.css" rel="stylesheet" type="text/css"/>
+    <title>gymholic:fats to fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utility.css">
 </head>
-<body>
-    <h1 class="center">CALCULATOR using HTML, CSS & Javascript</h1>
-    <div class="container bg-red flex mx-auto m-w-20 flex-col item-center" >
-        <div class="row">
-            <input class="input" type="text/">
-        </div>
-        <div class="row">
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">X</button>
-        </div>
-        <div class="row">
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">-</button>
-        </div>
-        <div class="row">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">+</button>
-        </div>
-        <div class="row">
-            <button class="button">.</button>
-            <button class="button">/</button>
-            <button class="button">0</button>
-            <button class="button">=</button>
-        </div>
+<body class="overflow-x-hidden">
+    <!--two classes by giving space-->
+    <div class="container mx-auto ">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">gymholic</div>
+                <ul class="navbar flex items-center">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li> Services</li>
+                    <li>Contact Us</li>
+                    <li><button class="btn">monthly subscription</button></li>
+                </ul>
+            </nav>
+            <hr>
+
+
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="flex items-center justify-center topleft flex-col px-2">
+                        <div class="text-center">
+                            <img class="dumbbellimg" src="C:\Users\DELL\Downloads\dumbbell.png" alt="">
+                        </div>
+                        <h1 class="my-1 text-center"> The best fitness gym in the town is here</h1>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquid harum eaque quibusdam consectetur eius doloribus tenetur, accusamus dignissimos autem aspernatur similique, vitae voluptate officia sint nulla inventore dolor laborum architecto perferendis!</p>
+                        <p class="deal text-center"> The deal ends in<span id="demo"></span></p>
+                        <div class="buttons">
+                            <button class="btn">Join Us</button>
+                            <button class="btn">Contact Us</button>
+
+                        </div>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="gyming" src="gym.png">
+                    </div>
+                </div>
+
+            </section>
+            <hr>
+            <section class="section2">
+                <h1 class="text-center my-2">pricing</h1>
+                <p class="my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, culpa suscipit doloremque provident iusto quae quisquam molestiae mollitia qui natus? Doloribus iure quasi porro nemo sed quo cum. Molestias sapiente velit modi provident dolorem nostrum ea voluptatibus veritatis similique? Enim, ipsam quos.</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>FREE!</h2>
+                        <ul>
+                            <li class="highlighted">₹0/month</li>
+                            <li>0 users included</li>
+                            <li>2 gb of storage</li>
+                            <li>email support</li>
+                            <li>help center access</li>
+                            <li><button class="btn">sign up for free!</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>PRO</h2>
+                        <ul>
+                            <li class="highlighted">₹1000/month</li>
+                            <li>hjhdj</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li><button class="btn">sign up for free!</button></li>                  
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>ENTERPRISE</h2>
+                        <ul>
+                            <li class="highlighted">₹2500/month</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li><button class="btn">sign up for free!</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">compare plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>free</th>
+                                <th>pro</th>
+                                <th>enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">public</th>
+                                <td>yes</svg></td>
+                                <td>yes</svg></td>
+                                <td>yes</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">private</th>
+                                <td></td>
+                                <td>yes</svg></td>
+                                <td>yes</svg></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">permissions</th>
+                                <td>yes</svg></td>
+                                <td>yes</svg></td>
+                                <td>yes</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">sharing</th>
+                                <td></td>
+                                <td>yes</svg></td>
+                                <td>yes</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">unlimited members</th>
+                                <td></td>
+                                <td>yes</svg></td>
+                                <td>yes</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">unlimited members</th>
+                                <td></td>
+                                <td></td>
+                                <td>yes</svg></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <hr>
+
+        </main>
+        <footer>
+            copyright &copy; gymholic.com | All rights reserved 
+        </footer>
     </div>
-    <script src="script.js"></script>
-    
 </body>
 </html>
